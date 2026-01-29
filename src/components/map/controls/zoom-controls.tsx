@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import { useMap } from "react-leaflet";
 
 import { MinusIcon, PlusIcon } from "lucide-react";
@@ -13,7 +11,7 @@ function ZoomControls() {
   const map = useMap();
 
   return (
-    <FlexBox asColumn className="absolute top-4! right-4! z-[1000] w-fit gap-0">
+    <FlexBox asColumn className="absolute top-4! right-4! z-1000 w-fit gap-0">
       <Button
         size="icon"
         className="bg-gray-1 rounded-b-none border border-b-0"

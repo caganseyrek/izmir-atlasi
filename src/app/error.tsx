@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { CloudAlertIcon } from "lucide-react";
 
 import { FlexBox } from "@/components/flexbox";

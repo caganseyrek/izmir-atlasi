@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import {
   CheckboxItem,
   Content,
@@ -37,7 +35,7 @@ function DropdownMenuContent({ className, sideOffset = 4.5, ...props }: React.Co
       <Content
         sideOffset={sideOffset}
         className={cn(
-          "max-h-[500px] min-w-full",
+          "max-h-125 min-w-full",
           "bg-gray-2 z-50 overflow-x-hidden overflow-y-auto rounded-sm border shadow-lg",
           "flex flex-col items-start justify-start",
           "data-[state=open]:animate-in data-[state=closed]:animate-out",
@@ -101,7 +99,7 @@ function DropdownMenuCheckboxItem({
     <CheckboxItem
       className={cn(
         buttonVariants({ variant, size, className, borderRadius }),
-        "relative rounded-[4px] pr-7",
+        "relative rounded-lg pr-7",
         className,
       )}
       checked={checked}

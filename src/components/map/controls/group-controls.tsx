@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { MenuIcon } from "lucide-react";
 
 import { Button } from "@/components/base/button";
@@ -63,11 +61,11 @@ function GroupControls({ selectedCategories, setSelectedCategories }: GroupContr
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button size="icon" className="bg-gray-1 absolute top-4! left-4! z-[1000] border">
+          <Button size="icon" className="bg-gray-1 absolute top-4! left-4! z-1000 border">
             <MenuIcon />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="z-[2000] w-[230px] max-w-[230px] min-w-[230px]" align="start">
+        <DropdownMenuContent className="z-2000 w-57.5 max-w-57.5 min-w-57.5" align="start">
           <Logo />
           <Separator />
           <Checkboxes />
@@ -77,9 +75,9 @@ function GroupControls({ selectedCategories, setSelectedCategories }: GroupContr
   }
 
   return (
-    <FlexBox className="absolute top-4! left-4! z-[1000] items-start gap-3">
+    <FlexBox className="absolute top-4! left-4! z-1000 items-start gap-3">
       <FlexBox
-        className="bg-gray-1 w-[230px] max-w-[230px] min-w-[230px] items-start gap-0 rounded-sm border transition-all"
+        className="bg-gray-1 w-57.5 max-w-57.5 min-w-57.5 items-start gap-0 rounded-sm border transition-all"
         asColumn>
         <Logo />
         <Separator />

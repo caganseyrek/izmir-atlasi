@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { Root } from "@radix-ui/react-separator";
 
 import { cn } from "@/lib/utils";
@@ -21,7 +19,7 @@ function Separator({
       className={cn(
         "shrink-0 rounded-lg",
         lighter ? "bg-border-lighter/55" : "bg-border",
-        orientation === "horizontal" ? "h-[1px] w-full" : "h-full w-[1px]",
+        orientation === "horizontal" ? "h-px w-full" : "h-full w-px",
         className,
       )}
       {...props}

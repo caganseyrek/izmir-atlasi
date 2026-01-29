@@ -1,4 +1,3 @@
-import React from "react";
 import { Popup as LeafletPopup } from "react-leaflet";
 
 import { MapPinIcon } from "lucide-react";

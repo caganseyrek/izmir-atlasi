@@ -1,4 +1,3 @@
-import React from "react";
 
 import { PackageOpenIcon } from "lucide-react";
 

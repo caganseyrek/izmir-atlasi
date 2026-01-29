@@ -10,7 +10,6 @@ import { JumpToStartControl } from "@/components/map/controls/jump-to-start";
 import { ZoomControls } from "@/components/map/controls/zoom-controls";
 
 import { Marker } from "@/components/map/marker";
-
 import { Placeholder } from "@/components/map/placeholder";
 
 import { dataCategories, type DataCategoryProps } from "@/data/categories";

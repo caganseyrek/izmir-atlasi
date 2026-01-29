@@ -1,4 +1,3 @@
-import React from "react";
 
 import { Checkbox } from "@/components/base/checkbox";
 import { Separator } from "@/components/base/separator";
@@ -23,9 +22,9 @@ function Sidebar({ selectedCategories, setSelectedCategories }: SidebarProps) {
   }
 
   return (
-    <FlexBox className="absolute top-4! left-4! z-[1000] items-start gap-3">
+    <FlexBox className="absolute top-4! left-4! z-1000 items-start gap-3">
       <FlexBox
-        className="bg-gray-1 w-[250px] max-w-[250px] min-w-[250px] items-start gap-0 rounded-sm border transition-all"
+        className="bg-gray-1 w-62.5 max-w-62.5 min-w-62.5 items-start gap-0 rounded-sm border transition-all"
         asColumn>
         <h1 className="w-full items-start gap-3 p-3 font-['Ancizar_Serif']! text-2xl leading-none font-bold tracking-tight">
           Atlas İzmir

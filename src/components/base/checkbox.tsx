@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { Indicator, Root } from "@radix-ui/react-checkbox";
 import { Check } from "lucide-react";
 

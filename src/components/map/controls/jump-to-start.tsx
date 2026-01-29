@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import { useMap } from "react-leaflet";
 
 import { FullscreenIcon } from "lucide-react";
@@ -18,7 +16,7 @@ function JumpToStartControl({ initialCenter, zoom }: JumpToStartControlProps) {
   return (
     <Button
       size="icon"
-      className="bg-gray-1 absolute top-[87.6px]! right-4! z-[1000] border"
+      className="bg-gray-1 absolute top-[87.6px]! right-4! z-1000 border"
       onClick={(event) => {
         event.stopPropagation();
         event.preventDefault();
