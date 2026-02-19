@@ -6,8 +6,8 @@ import type { WrapperProps } from "@/types";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - Atlas İzmir",
-    default: "Atlas İzmir",
+    template: "%s - İzmir Atlası",
+    default: "İzmir Atlası",
   },
 };
 

@@ -32,7 +32,7 @@ function GroupControls({ selectedCategories, setSelectedCategories }: GroupContr
   function Logo() {
     return (
       <h1 className="w-full items-start gap-3 p-3 font-['Ancizar_Serif']! text-2xl leading-none font-bold tracking-tight">
-        Atlas İzmir
+        İzmir Atlası
       </h1>
     );
   }

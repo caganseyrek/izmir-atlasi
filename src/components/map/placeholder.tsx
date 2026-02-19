@@ -1,10 +1,9 @@
-
 function Placeholder() {
   return (
     <div>
       <>
-        Map of the world showing historical and touristic locations in İzmir
-        <noscript>You need to enable JavaScript to see this map.</noscript>
+        İzmir'deki önemli, tarihî ve kültürel yerleri gösteren interaktif harita.
+        <noscript>Bu haritayı görebilmek için JavaScript'i etkinleştirmelisiniz.</noscript>
       </>
     </div>
   );

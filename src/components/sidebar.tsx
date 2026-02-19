@@ -27,7 +27,7 @@ function Sidebar({ selectedCategories, setSelectedCategories }: SidebarProps) {
         className="bg-gray-1 w-62.5 max-w-62.5 min-w-62.5 items-start gap-0 rounded-sm border transition-all"
         asColumn>
         <h1 className="w-full items-start gap-3 p-3 font-['Ancizar_Serif']! text-2xl leading-none font-bold tracking-tight">
-          Atlas İzmir
+          İzmir Atlası
         </h1>
 
         <Separator />
