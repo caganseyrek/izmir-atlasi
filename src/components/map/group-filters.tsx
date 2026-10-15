@@ -5,20 +5,19 @@ import { MenuIcon } from "lucide-react";
 import { Button } from "@/components/base/button";
 import { Checkbox } from "@/components/base/checkbox";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/base/dropdown";
+import { FlexBox } from "@/components/base/flexbox";
 import { Separator } from "@/components/base/separator";
-
-import { FlexBox } from "@/components/flexbox";
 
 import { useIsMobile } from "@/hooks/use-is-mobile";
 
 import { dataCategories, type DataCategoryProps } from "@/data/categories";
 
-interface GroupControlsProps {
+interface GroupFiltersProps {
   selectedCategories: DataCategoryProps[];
   setSelectedCategories: React.Dispatch<React.SetStateAction<DataCategoryProps[]>>;
 }
 
-function GroupControls({ selectedCategories, setSelectedCategories }: GroupControlsProps) {
+function GroupFilters({ selectedCategories, setSelectedCategories }: GroupFiltersProps) {
   const isMobile = useIsMobile();
 
   function handleCheckedChange(category: DataCategoryProps): void {
@@ -87,4 +86,4 @@ function GroupControls({ selectedCategories, setSelectedCategories }: GroupContr
   );
 }
 
-export { GroupControls };
+export { GroupFilters };

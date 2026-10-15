@@ -1,13 +1,11 @@
-"use client";
 import { useMap } from "react-leaflet";
 
 import { MinusIcon, PlusIcon } from "lucide-react";
 
 import { Button } from "@/components/base/button";
+import { FlexBox } from "@/components/base/flexbox";
 
-import { FlexBox } from "@/components/flexbox";
-
-function ZoomControls() {
+function Zoom() {
   const map = useMap();
 
   return (
@@ -41,4 +39,4 @@ function ZoomControls() {
   );
 }
 
-export { ZoomControls };
+export { Zoom };

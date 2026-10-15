@@ -1,7 +1,5 @@
-"use client";
-
-import { Indicator, Root } from "@radix-ui/react-checkbox";
 import { Check } from "lucide-react";
+import { Indicator, Root } from "radix-ui/checkbox";
 
 import { cn } from "@/lib/utils";
 

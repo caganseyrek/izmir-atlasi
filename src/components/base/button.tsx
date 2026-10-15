@@ -1,20 +1,14 @@
-
-import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 
-import { FlexBox } from "@/components/flexbox";
+import { FlexBox } from "@/components/base/flexbox";
 
 import { cn } from "@/lib/utils";
 
 import type { WrapperProps } from "@/types";
 
-type ButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement> & VariantProps<typeof buttonVariants>;
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & VariantProps<typeof buttonVariants>;
 
-interface ButtonProps extends ButtonBaseProps {
-  asChild?: boolean;
-}
-
-interface LinkButtonProps extends ButtonBaseProps {
+interface LinkButtonProps extends ButtonProps {
   href: string;
   external?: boolean;
 }
@@ -57,11 +51,9 @@ function Button({
   variant = "default",
   size = "default",
   borderRadius = "default",
-  asChild = false,
   ...props
 }: React.HTMLAttributes<HTMLButtonElement> & ButtonProps) {
-  const Component = asChild ? Slot : "button";
-  return <Component className={cn(buttonVariants({ variant, size, borderRadius }), "", className)} {...props} />;
+  return <button className={cn(buttonVariants({ variant, size, borderRadius }), "", className)} {...props} />;
 }
 
 function ButtonContainer({ children, className }: WrapperProps) {

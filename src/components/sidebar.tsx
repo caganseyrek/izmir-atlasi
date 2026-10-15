@@ -1,8 +1,6 @@
-
 import { Checkbox } from "@/components/base/checkbox";
+import { FlexBox } from "@/components/base/flexbox";
 import { Separator } from "@/components/base/separator";
-
-import { FlexBox } from "@/components/flexbox";
 
 import { dataCategories, type DataCategoryProps } from "@/data/categories";
 
@@ -12,7 +10,6 @@ interface SidebarProps {
 }
 
 function Sidebar({ selectedCategories, setSelectedCategories }: SidebarProps) {
-  
   function handleCheckedChange(category: DataCategoryProps): void {
     setSelectedCategories(
       selectedCategories.includes(category)

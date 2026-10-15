@@ -2,9 +2,8 @@ import { Popup as LeafletPopup } from "react-leaflet";
 
 import { MapPinIcon } from "lucide-react";
 
+import { FlexBox } from "@/components/base/flexbox";
 import { Separator } from "@/components/base/separator";
-
-import { FlexBox } from "@/components/flexbox";
 
 import type { LocationData } from "@/types";
 

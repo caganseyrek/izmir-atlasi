@@ -1,5 +1,4 @@
-"use client";
-
+import { Check } from "lucide-react";
 import {
   CheckboxItem,
   Content,
@@ -10,8 +9,7 @@ import {
   Portal,
   Root,
   Trigger,
-} from "@radix-ui/react-dropdown-menu";
-import { Check } from "lucide-react";
+} from "radix-ui/dropdown-menu";
 
 import { Button, type ButtonProps, buttonVariants } from "@/components/base/button";
 
@@ -97,11 +95,7 @@ function DropdownMenuCheckboxItem({
 }: React.ComponentProps<typeof CheckboxItem> & ButtonProps) {
   return (
     <CheckboxItem
-      className={cn(
-        buttonVariants({ variant, size, className, borderRadius }),
-        "relative rounded-lg pr-7",
-        className,
-      )}
+      className={cn(buttonVariants({ variant, size, className, borderRadius }), "relative rounded-lg pr-7", className)}
       checked={checked}
       {...props}>
       <>

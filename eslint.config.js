@@ -1,21 +1,23 @@
 import js from "@eslint/js";
-import eslintConfigPrettier from "eslint-config-prettier";
-import { defineConfig } from "eslint/config";
+import reactHooks from "eslint-plugin-react-hooks";
+import reactRefresh from "eslint-plugin-react-refresh";
+import { defineConfig, globalIgnores } from "eslint/config";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+  globalIgnores(["dist"]),
   {
-    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+    files: ["**/*.{ts,tsx}"],
+    extends: [
+      js.configs.recommended,
+      tseslint.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
     languageOptions: {
-      globals: { ...globals.browser, ...globals.node },
+      globals: globals.browser,
     },
-  },
-  {
-    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
-    plugins: { js },
-    extends: ["js/recommended"],
   },
   {
     languageOptions: {
@@ -49,6 +51,4 @@ export default defineConfig([
       quotes: ["error", "double", { avoidEscape: true }],
     },
   },
-  { ...eslintConfigPrettier },
-  tseslint.configs.recommended,
 ]);

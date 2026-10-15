@@ -1,16 +1,15 @@
-"use client";
 import { useMap } from "react-leaflet";
 
 import { FullscreenIcon } from "lucide-react";
 
 import { Button } from "@/components/base/button";
 
-interface JumpToStartControlProps {
+interface ReturnToStartControlProps {
   initialCenter: [number, number];
   zoom: number;
 }
 
-function JumpToStartControl({ initialCenter, zoom }: JumpToStartControlProps) {
+function ReturnToStartControl({ initialCenter, zoom }: ReturnToStartControlProps) {
   const map = useMap();
 
   return (
@@ -29,4 +28,4 @@ function JumpToStartControl({ initialCenter, zoom }: JumpToStartControlProps) {
   );
 }
 
-export { JumpToStartControl };
+export { ReturnToStartControl };
